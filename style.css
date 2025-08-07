@@ -317,6 +317,7 @@ header{
     display: flex;
     flex-direction: column;
     line-height: 24px;
+    flex: 1;
 }
 
 .box-icon{
@@ -370,7 +371,7 @@ header{
 .hg-footer__lists-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 8px;
     max-width: 1128px;
     margin-bottom: 16px;
@@ -474,6 +475,7 @@ header{
     text-decoration: none;
     color: #1d1e20;
     font-size: 14px;
+    line-height: 24px;
 }
 
 .hg-footer__legal-notice{
@@ -484,7 +486,14 @@ header{
     padding: 24px 0;
     width: 100%;
     border-top: 1px solid #dfe6ff;
-    gap: 128px;
+}
+
+.hg-footer__legal-notice :nth-child(1){
+    max-width: 806px;
+}
+
+.hg-footer__legal-notice :nth-child(2){
+    max-width: 194px;
 }
 
 .hg-footer__legal-notice p{
@@ -511,12 +520,20 @@ header{
         height: 100%;
     }
 
+    .hg-footer__list{
+        flex: 1;
+    }
+
 }
 
 @media screen and (max-width: 1139px){
     
     .hg-header__navegation-container{
         display: none;
+    }
+
+    .hg-header__icon-anchor-container{
+        padding: 16px 0 16px 20px;
     }
 
     .hg-header__nav{
@@ -527,7 +544,7 @@ header{
     
     .hg-header__menu-icon{
         display: flex;
-        margin-right: 40px;
+        margin-right: 14px;
     }
     
     .hg-header__menu-icon i{
@@ -596,6 +613,11 @@ header{
         column-gap: 44px;
     }
 
+    .hg-footer__links-section{
+        height: 168px;
+        margin: 0;
+    }
+
     .hg-footer__social-networks{
         margin-top: 8px;
     }
@@ -616,7 +638,85 @@ header{
         flex-direction: column;
         align-items: start;
         gap: 8px;
-        margin-top: 56px;
     }
 
 }
+
+@media screen and (max-width: 769px){
+
+    .hg-hero__container{
+        width: 100%;
+    }
+
+    .seccion-titulos{
+        width: 100%;
+    }
+
+    .hg-footer{
+        height: 10000px;
+    }
+
+    .hg-footer__content{
+        max-width: 540px;
+        padding: 48px 16px 0 16px;
+        height: 100%;
+    }
+
+.hg-footer__lists-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+    .hg-footer__list{
+        width: 100%;
+    }
+
+    .hg-footer__list-title{
+        padding: 8px 0;
+        margin: 0;
+        line-height: normal;
+    }
+
+    .hg-footer__list a{
+        display: none;
+    }
+
+    .hg-footer__politics{
+        max-width: 338px;
+        max-height: 56px;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .hg-footer__links-section{
+        min-height: 326px;
+        margin: 24px 0 0;
+    }
+
+    .hg-footer__social-networks{
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 16px;
+    }
+
+    .hg-footer__payment-methods{
+        max-width: 300px;
+        max-height: 88px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+
+    .hg-footer__social-networks-links{
+        justify-content: space-between;
+        gap: 16px;
+        width: 100%;
+        padding: 16px 0;
+    }
+
+    .hg-footer__legal-notice{
+        padding: 24px 0 16px;
+    }
+}
+
