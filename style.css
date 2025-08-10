@@ -272,7 +272,7 @@ header{
 
 /* ---------------------------- SECTION - CARDS ---------------------- */
 
-.seccion{
+.hg-section-cards{
     padding: 80px 40px;
     flex-direction: column;
     display: flex;
@@ -282,7 +282,7 @@ header{
     min-height: 584px;
 }
 
-.seccion-titulos{
+.hg-section-cards__titles-container{
     align-items: center;
     width: 100%;
     margin-bottom: 48px;
@@ -291,24 +291,24 @@ header{
     gap: 32px;
 }
 
-.subtitulo{
+.hg-section-cards__title{
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 1px;
 }
 
-.seccion-subtitulo{
+.hg-section-cards__subtitle{
     font-size: 16px;
 }
 
-.cards-container{
+.hg-section-cards__cards-container{
     justify-content: center;
     gap: 25px;
     display: flex;
     flex-direction: row;
 }
 
-.card{
+.hg-section-cards__card{
     padding: 32px;
     border-radius: 16px;
     background-color: #2f1c6a; 
@@ -320,7 +320,7 @@ header{
     flex: 1;
 }
 
-.box-icon{
+.hg-section-cards__icon-container{
     width: 40px;
     height: 40px;
     background-color: #673de6;
@@ -330,22 +330,22 @@ header{
     border-radius: 6px;
 }
 
-.icon{
+.hg-section-cards__icon{
     width: 24px;
     height: 24px;
 }
 
-.card-title-container{
+.hg-section-cards__card-title-container{
     display: flex;
     flex-direction: column;
 }
 
-.card-title{
+.hg-section-cards__card-title{
     font-size: 18px;
     font-weight: 700;
 }
 
-.parrafo-card{
+.hg-section-cards__card-paragraph{
     font-size: 16px;
 }
 
@@ -574,32 +574,32 @@ header{
         height: 100%;
     }
 
-    .seccion{
+    .hg-section-cards{
         padding: 64px 0;
     }
 
-    .seccion-titulos{
+    .hg-section-cards__titles-container{
         gap: 24px;
         line-height: normal;
         width: 768px;
         letter-spacing: normal;
     }
 
-    .subtitulo{
+    .hg-section-cards__title{
         font-size: 28px;
         letter-spacing: normal;
     }
 
-    .seccion-subtitulo{
+    .hg-section-cards__subtitle{
         line-height: 24px;
     }
 
-    .cards-container{
+    .hg-section-cards__cards-container{
         flex-direction: column;
         align-items: center;
     }
 
-    .card{
+    .hg-section-cards__card{
         max-width: 688px;
     }
 
@@ -648,12 +648,24 @@ header{
         width: 100%;
     }
 
-    .seccion-titulos{
-        width: 100%;
+    .hg-section-cards__titles-container{
+        width: 508px;
+        gap: 16px;
+        text-align: center;
+        margin-bottom: 32px;
     }
 
-    .hg-footer{
-        height: 10000px;
+    .hg-section-cards__title{
+        font-size: 24px;
+    }
+
+    .hg-section-cards__cards-container{
+        max-width: 508px;
+        gap: 16px;
+    }
+
+    .hg-section-cards__card{
+        text-align: left;
     }
 
     .hg-footer__content{
@@ -662,7 +674,7 @@ header{
         height: 100%;
     }
 
-.hg-footer__lists-container {
+    .hg-footer__lists-container {
     display: flex;
     flex-direction: column;
     width: 100%;
