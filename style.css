@@ -724,15 +724,20 @@ header{
 
     .hg-footer__politics{
         max-width: 338px;
-        max-height: 56px;
+        max-height: 100%;
         flex-wrap: wrap;
         gap: 8px;
         justify-content: space-between;
     }
 
     .hg-footer__links-section{
-        min-height: 326px;
+        height: 405px;
         margin: 24px 0 0;
+    }
+
+    .hg-footer__payment-info{
+        height: 100%;
+        justify-content: start;
     }
 
     .hg-footer__social-networks{
@@ -743,7 +748,7 @@ header{
 
     .hg-footer__payment-methods{
         max-width: 300px;
-        max-height: 88px;
+        max-height: 100%fit-c;
         flex-wrap: wrap;
         margin-bottom: 24px;
     }
@@ -759,4 +764,3 @@ header{
         padding: 24px 0 16px;
     }
 }
-
