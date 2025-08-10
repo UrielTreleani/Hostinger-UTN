@@ -32,6 +32,12 @@ header{
     height: 88px;
 }
 
+.hg-header__nav-icon{
+    font-weight: 700;
+    font-size: 14px;
+    color: #1d1e20;
+}
+
 .hg-header__icon-anchor-container{
     display: flex;
     justify-content: center;
@@ -384,6 +390,10 @@ header{
     margin-bottom: 8px;
 }
 
+.hg-footer__list-title-icon{
+    display: none;
+}
+
 .hg-footer__list{
     display: flex;
     flex-direction: column;
@@ -648,11 +658,16 @@ header{
         width: 100%;
     }
 
+    .hg-section-cards__container{
+        max-width: 508px;
+    }
+
     .hg-section-cards__titles-container{
-        width: 508px;
         gap: 16px;
         text-align: center;
         margin-bottom: 32px;
+        width: 100%;
+        padding: 0 16px;
     }
 
     .hg-section-cards__title{
@@ -660,12 +675,18 @@ header{
     }
 
     .hg-section-cards__cards-container{
-        max-width: 508px;
         gap: 16px;
+        width: 100%;
+        padding: 0 16px;
     }
 
     .hg-section-cards__card{
         text-align: left;
+        width: 100%;
+    }
+
+    .hg-footer{
+        padding: 0 16px;
     }
 
     .hg-footer__content{
@@ -682,12 +703,19 @@ header{
 
     .hg-footer__list{
         width: 100%;
+        margin: 0;
     }
 
     .hg-footer__list-title{
         padding: 8px 0;
         margin: 0;
         line-height: normal;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hg-footer__list-title-icon{
+        display: flex;
     }
 
     .hg-footer__list a{
